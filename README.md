@@ -1,6 +1,7 @@
 # PereMicroBanking
 
 ## Project Structure
+```
 PereMicroBanking/
 ├── PereMicroBanking/              # Main App Target
 │   ├── PereMicroBankingApp.swift
@@ -45,3 +46,4 @@ PereMicroBanking/
 │       ├── SubscriptionKit/       # O - Premium Subscription
 │       └── SecurityKit/           # O1, O2, O3 - Security Features
 └── PereMicroBanking.xcodeproj/
+```
