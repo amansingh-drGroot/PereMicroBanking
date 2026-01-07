@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import ConfigKit
+import CoreAuth
 
 @main
 struct PereMicroBankingApp: App {
+    init() {
+        // Configure Firebase and app-wide settings
+        ConfigKit.shared.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthenticationRootView()
         }
     }
 }

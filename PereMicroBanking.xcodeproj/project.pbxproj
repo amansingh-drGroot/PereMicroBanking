@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A28051B2F0BADF1005BB927 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A28051A2F0BADF1005BB927 /* FirebaseAuth */; };
+		0A28051D2F0BADF1005BB927 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A28051C2F0BADF1005BB927 /* FirebaseCore */; };
+		0A2805202F0BAF0B005BB927 /* ConfigKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0A28051F2F0BAF0B005BB927 /* ConfigKit */; };
+		0A2805232F0BAF2D005BB927 /* CoreAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2805222F0BAF2D005BB927 /* CoreAuth */; };
+		0A2805282F0BB592005BB927 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2805272F0BB592005BB927 /* FirebaseAnalytics */; };
+		0A28052A2F0BB59D005BB927 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0A2805292F0BB59D005BB927 /* FirebaseCrashlytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0A7436362F0B97FC0068E9E5 /* PereMicroBanking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PereMicroBanking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0A93FF8E2F0CDEF4000FBC2B /* Exceptions for "PereMicroBanking" folder in "PereMicroBanking" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0A7436352F0B97FC0068E9E5 /* PereMicroBanking */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0A7436382F0B97FC0068E9E5 /* PereMicroBanking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0A93FF8E2F0CDEF4000FBC2B /* Exceptions for "PereMicroBanking" folder in "PereMicroBanking" target */,
+			);
 			path = PereMicroBanking;
 			sourceTree = "<group>";
 		};
@@ -23,16 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A28051D2F0BADF1005BB927 /* FirebaseCore in Frameworks */,
+				0A2805202F0BAF0B005BB927 /* ConfigKit in Frameworks */,
+				0A28051B2F0BADF1005BB927 /* FirebaseAuth in Frameworks */,
+				0A28052A2F0BB59D005BB927 /* FirebaseCrashlytics in Frameworks */,
+				0A2805282F0BB592005BB927 /* FirebaseAnalytics in Frameworks */,
+				0A2805232F0BAF2D005BB927 /* CoreAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2805262F0BB592005BB927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0A74362D2F0B97FC0068E9E5 = {
 			isa = PBXGroup;
 			children = (
 				0A7436382F0B97FC0068E9E5 /* PereMicroBanking */,
+				0A2805262F0BB592005BB927 /* Frameworks */,
 				0A7436372F0B97FC0068E9E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +101,12 @@
 			);
 			name = PereMicroBanking;
 			packageProductDependencies = (
+				0A28051A2F0BADF1005BB927 /* FirebaseAuth */,
+				0A28051C2F0BADF1005BB927 /* FirebaseCore */,
+				0A28051F2F0BAF0B005BB927 /* ConfigKit */,
+				0A2805222F0BAF2D005BB927 /* CoreAuth */,
+				0A2805272F0BB592005BB927 /* FirebaseAnalytics */,
+				0A2805292F0BB59D005BB927 /* FirebaseCrashlytics */,
 			);
 			productName = PereMicroBanking;
 			productReference = 0A7436362F0B97FC0068E9E5 /* PereMicroBanking.app */;
@@ -94,6 +136,11 @@
 			);
 			mainGroup = 0A74362D2F0B97FC0068E9E5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0A28051E2F0BAF0B005BB927 /* XCLocalSwiftPackageReference "Packages/Core/ConfigKit" */,
+				0A2805212F0BAF2D005BB927 /* XCLocalSwiftPackageReference "Packages/Core/CoreAuth" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A7436372F0B97FC0068E9E5 /* Products */;
 			projectDirPath = "";
@@ -251,8 +298,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAD9449BNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PereMicroBanking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -263,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.groot.PereMicroBanking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perennial.digiBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -278,19 +327,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAD9449BNE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PereMicroBanking/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.groot.PereMicroBanking;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perennial.digiBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +373,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0A28051E2F0BAF0B005BB927 /* XCLocalSwiftPackageReference "Packages/Core/ConfigKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Core/ConfigKit;
+		};
+		0A2805212F0BAF2D005BB927 /* XCLocalSwiftPackageReference "Packages/Core/CoreAuth" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Core/CoreAuth;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A28051A2F0BADF1005BB927 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0A28051C2F0BADF1005BB927 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		0A28051F2F0BAF0B005BB927 /* ConfigKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ConfigKit;
+		};
+		0A2805222F0BAF2D005BB927 /* CoreAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreAuth;
+		};
+		0A2805272F0BB592005BB927 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0A2805292F0BB59D005BB927 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A2805192F0BADF1005BB927 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A74362E2F0B97FC0068E9E5 /* Project object */;
 }
